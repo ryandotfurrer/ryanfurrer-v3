@@ -1,0 +1,127 @@
+/*-----Traslate SASS Variables to CSS Variables-----*/
+:root {
+  --background: #2f293d;
+  --lighter-background: #3b334c;
+  --color: #f2eefb;
+  --lighter-accent: #bdabed;
+  --accent: #ad96e9;
+  --cta-color: #96e9d8;
+  --transition: 300ms;
+}
+
+/* $background: #2F293D;
+$lighter-background: lighten($background, 5%);
+$color: #F2EEFB;
+$accent: #AD96E9;
+$cta-color: #96E9D8;
+$transition: 300ms; */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .container {
+    max-width: 65em;
+  }
+
+  p {
+    font-size: 1.15rem;
+  }
+
+  nav .navlist .logo .logo-img {
+    margin-right: 0.5rem;
+    width: 3rem;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+    transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  }
+
+  nav .navlist .logo .logo-img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+  nav .navlist .logo .typo-logo {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+
+  nav .navlist .logo li > a:hover {
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#96e9d8),
+      to(#96e9d8)
+    );
+    background: linear-gradient(#96e9d8, #96e9d8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .page-links {
+    justify-content: flex-end;
+  }
+
+  nav .navlist li a {
+    font-size: 1.25rem;
+    margin-right: 1rem;
+  }
+
+  header {
+    margin: 0 auto;
+    max-width: 65em;
+  }
+
+  /* #skills > article > section > img {
+    max-width: 10rem;
+  } */
+
+  #projects,
+  #about {
+    max-width: 50em;
+    margin: 0 auto;
+  }
+
+  .project-card {
+    transition: background var(--transition), box-shadow var(--transition),
+      transform var(--transition);
+  }
+
+  .project-card:hover {
+    background: var(--lighter-background);
+    box-shadow: -2vh 2vh var(--accent);
+    transform: translate(2vh, -2vh);
+  }
+
+  .form-container {
+    width: 75%;
+  }
+
+  footer {
+    margin: 0 auto;
+    padding: 1rem 0.5rem;
+    width: 100%;
+  }
+
+  footer > .container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+
+  header > .profile-picture {
+    border-radius: 0;
+  }
+}
