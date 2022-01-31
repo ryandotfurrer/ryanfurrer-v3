@@ -1,5 +1,5 @@
 # portfolio-v3
-This was the project where I decdied to rebrand my existing (and lackluster) social media presence and brand as "The Ryan Furrer." Read more about building this site on my blog, The Ryan Furrer Blog.
+This was the project where I decdied to rebrand my existing (and lackluster) social media presence and brand as "The Ryan Furrer." Read more about building this site on my blog, [The Ryan Furrer Blog](https://www.theryanfurrer.blog/blog/designing-and-developing-my-portfolio-v3/).
 
 ![Screenshot of portfolio-v3](https://user-images.githubusercontent.com/40150036/151720194-2f5915a4-4011-490f-a2da-89ac4025e760.png)
 
